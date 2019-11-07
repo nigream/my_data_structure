@@ -121,7 +121,7 @@ public class MyArrayE<E> {
      * @return 返回值与参数相等的所有元素的索引值封装成的MyArray对象；若该元素不存在，则返回-1封装成的MyArray对象
      */
     public MyArrayE<Integer> getAllIndexesByValue(E value){
-        MyArrayE<Integer> indexArray = new MyArrayE<>(length);
+        MyArrayE<Integer> indexArray = new MyArrayE<Integer>(length);
         for (int i = 0; i < size; i++) {
             if(data[i].equals(value)){
                 indexArray.addLast(i);
